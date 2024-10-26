@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./scalur.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg px-sm-5" id="navbar">
+    <a class="navbar-brand mx-lg-3 text-primary" href="#"><b>SCALER</b>
+      <div id="a1" style="color: black;">ACADEMY</div>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link  mx-lg-3" href="#">Curriculum </a>
+
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link" href="#">Reviews</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link" href="#">Teaching</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link" href="#">Mentorship</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link" href="#">Community</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link" href="#">carrers</a>
+        </li>
+        <li class="nav-item mx-lg-3">
+          <a class="nav-link" href="#">FAQS</a>
+        </li>
+        <li>
+          <button>Login</button>
+        </li>
+      </ul>
+    </div>
+    <button class="mx-lg-3" id="button">Request a call</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div id="home">
+    <div id="about">
+      <div id="p1">Your Path to a Successful Tech Career!</div>
+      <div id="p2">Now experience the program for <b>FREE</b> </div>
+      <div id="button">
+        <button id="b1">Book a Live Class</button>
+        <button id="b2">Explore Academy</button>
+      </div>
+      <div id="p3"> NEXT BATCH STARTS <b>MID-OCTOBER</b> </div>
+    </div>
+    <div id="registration">
+      <div id="texts">Book a Live Class, For <b>Free!</b></div>
+      <div id="form">
+        <form action="">
+          <div id="n">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+          </div>
+          <div id="phone">
+            <div id="n0">
+              <div id="flag"><img
+                  src="data:image/png;base64,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"
+                  height="10px" alt=""></div>
+              <div id="number">+91</div>
+            </div>
+            <input type="text" placeholder="phone">
+          </div>
+          <div id="g0">
+            <input type="number" placeholder="graduation">
+            <select id="college" name="college">
+              <option value="college">college</option>
+              <option value="SANK">SANK</option>
+              <option value="ASIT">ASIT</option>
+            </select>
+          </div>
+          <div id="g1">
+            <select id="company" name="company">
+              <option value="company">company</option>
+              <option value="TCS">TCS</option>
+              <option value="INFOSYS">INFOSYS</option>
+            </select>
+          </div>
+
+          <div id="g2">
+            <select id="jobtitle" name="jobtitle">
+              <option value="jobtitle">jobtitle</option>
+              <option value="software-developer">software-developer</option>
+              <option value="software-manager">software-manager</option>
+              <option value="software-engineer">software-engineer</option>
+            </select>
+          </div>
+          <div id="g3">
+            <div id="i1"> <i class="fa-sharp fa-solid fa-square-check" style="font-size: 25px;"></i></div>
+            <div id="g4">
+              <div id="sms">WhatsApp/SMS Notifications</div>
+              <div id="on">Never miss out on reminders and updates from us!</div>
+            </div>
+          </div>
+          <div id="n1">
+            <button>Continue Booking Live Class</button>
+            <div id="n2">
+              <div id="pic"><img
+                  src="https://assets-v2.scaler.com/assets/scaler/svg/people-group-61788bad09e0699aa3090ab64b81944c9fc9ccb80ff5db9abb267dd36e0d626d.svg.gz "
+                  height="50px" width="20px"></div>
+              <div id="seats">limited seats left</div>
+            </div>
+          </div>
+          <div id="n3">Already have an account? <b>Click here</b></div>
+          <div id="n4">By creating an account I have read and agree to Scaler's Terms and Privacy Policy</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="web">
+    <div id="live">
+      <div id="program">A program for engineers to master <strong>Problem Solving & System Design</strong></div>
+
+      <div id="live1">
+        <div id="clr">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/structured-c36517d8d41efb3a24cbcb3fe1c8b27ffcfacb6b1462ec3e60516504a07eaff6.svg.gz"
+            alt="">
+          <div id="str1"><b>Structured, industry vetted curriculum</b></div>
+          <div id="str2"></div>
+        </div>
+        <div id="clr1">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/live-classes-afff2e39f63a26a19ee4ae844d4b0891c20c50e4b670a224564640cbb973f867.svg.gz"
+            alt="">
+          <div id="cls1"><strong>Live classes by faculty</strong> who have been there, done that</div>
+          <div id="cls2"></div>
+
+        </div>
+        <div id="clr2">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/project1-9fc6130d4e271198d5f051da0712b27627c872a353dac61c91f248e4f60b6ddf.svg.gz"
+            alt="">
+          <div id="pra1"><strong>Practical experience </strong>through real-life projects</div>
+          <div id="pra2"></div>
+
+        </div>
+        <div id="clr3">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/flexibility-94067174b36a4a38b3448219f64ccd3e42b3f32667c5ff0ec8d8fab665525d87.svg.gz"
+            alt="">
+          <div id="reg1"><strong>Regular 1:1 mentorship </strong>from industry veterans</div>
+          <div id="reg2"></div>
+
+        </div>
+        <div id="clr4">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/career-support-c92399914995cba52680341de44c1ce49d292b1de0f10aeb58c3c58a79e3ad3b.svg.gz"
+            alt="">
+          <div id="car1"><strong>Career support</strong> via a dedicated recruitment team, alumni network, etc</div>
+          <div id="car2"></div>
+
+        </div>
+        <div id="clr5">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/at-a-glance/career-support-c92399914995cba52680341de44c1ce49d292b1de0f10aeb58c3c58a79e3ad3b.svg.gz"
+            alt="">
+          <div id="asp1"><strong>Aspirational peer group</strong> of 2,000+ Scaler students & alumni</div>
+          <div id="asp2"></div>
+
+        </div>
+      </div>
+    </div>
+    <div id="flex">
+      <div id="head">We have designed a <strong>flexible program</strong> for you</div>
+      <div id="flex1">
+        <div id="miss">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/missed-class-logo-60d09407cfb901d01f9acbf3ce40460ea42c291dc97dd6a8d9fe624594977239.svg.gz"
+            alt="">
+          <div id="miss1">Missed a class?</div>
+          <div id="miss2">Watch the recording later, with teaching assistants available to solve your doubts</div>
+        </div>
+        <div id="miss">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/family-logo-48c3a44b9f17f1e1a6ebcfa8e9ec7fa2370c27094caf996810c02754e307b3d1.svg.gz"
+            alt="">
+          <div id="miss1">Work / family needs time?</div>
+          <div id="miss2">Pause your course and restart a month later with the next batch!</div>
+        </div>
+        <div id="miss">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/revise-8aceca46e65750c791c12d778669bf01650ef9e02c2d211ba30c6831c34946ab.svg.gz"
+            alt="">
+          <div id="miss1">Jobs & class timings clash?</div>
+          <div id="miss2">Decide your ideal class timing together with your classmates</div>
+        </div>
+      </div>
+      <div id="flex2">
+        <div id="miss">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/revise-8aceca46e65750c791c12d778669bf01650ef9e02c2d211ba30c6831c34946ab.svg.gz"
+            alt="">
+          <div id="miss1">Want to revise?</div>
+          <div id="miss2">Access assignments/notes lifelong and recordings upto 6 months post course completion</div>
+        </div>
+        <div id="miss">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/svg/doubts-44d18551b6589cdeff9e88978faac43d7bb0787cdc74e508832d7692b4d4158b.svg.gz"
+            alt="">
+          <div id="miss1">Have doubts?</div>
+          <div id="miss2">Get them resolved over text / video by our expert teaching assistants!</div>
+        </div>
+
+      </div>
+    </div>
+    <div id="curr">
+      <div id="curr1"><strong>Curriculum</strong> is designed to make you a <strong>solid engineer</strong></div>
+      <div id="curr2">
+
+        <div id="beg">
+          <div id="beg1">
+            <div id="beg11">Beginner</div>
+            <div id="beg2">11.5 Months</div>
+          </div>
+          <input type="radio" id="on1">
+        </div>
+
+
+        <div id="beg">
+          <div id="beg1">
+            <div id="beg11">Intermediate</div>
+            <div id="beg2">11.5 Months</div>
+          </div>
+          <input type="radio" id="on1">
+        </div>
+
+
+        <div id="beg">
+          <div id="beg1">
+            <div id="beg11">Advanced</div>
+            <div id="beg2">9.5 Months</div>
+          </div>
+          <input type="radio" id="on1">
+        </div>
+
+      </div>
+    </div>
+    <div id="pro">
+      <div id="pro1">
+        <div id="gra">
+          <div id="gra1">
+            <div id="gra11">MOUDLE - 1</div>
+            <div id="gra12">Programming Language Fundamentals</div>
+          </div>
+          <div id="gra2">2 Months</div>
+        </div>
+        <div id="gra">
+          <div id="gra1">
+            <div id="gra11">MOUDLE - 2</div>
+            <div id="gra12">Data Structures and Algorithms</div>
+          </div>
+          <div id="gra2">4.5 Months</div>
+        </div>
+        <div id="gra">
+          <div id="gra1">
+            <div id="gra11">MOUDLE - 3</div>
+            <div id="gra12">SQL</div>
+          </div>
+          <div id="gra2">0.5 Months</div>
+        </div>
+        <div id="gra">
+          <div id="gra1">
+            <div id="gra11">MOUDLE - 4</div>
+            <div id="gra12">LLD and Project Specialisations</div>
+          </div>
+          <div id="gra2">3.5 Months</div>
+        </div>
+        <div id="gra">
+          <div id="gra1">
+            <div id="gra11">MOUDLE - 5</div>
+            <div id="gra12">System Design Essentials</div>
+          </div>
+          <div id="gra2">1 Months</div>
+        </div>
+        <div id="gra">
+          <div id="gra1">
+            <div id="gra11">MOUDLE - 6</div>
+            <div id="gra12">Electives</div>
+          </div>
+          <div id="gra2">1-2 Months</div>
+        </div>
+      </div>
+      <div id="pro2">
+        <div id="pro21">
+          <div id="mon">4 Months</div>
+          <div id="data">
+            <div id="data1"><i class="fa-solid fa-circle"></i> <span>Data Structures and Algorithms</span></div>
+            <div id="data2">
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Time and Space Complexity</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Array Problem Solving Techniques</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Bit Manipulation</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Maths for Problem Solving</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Recursion</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Backtracking</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Sorting</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Searching(Binary Search)</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Two Pointers</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Hashing</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Strings and Pattern Matching</span></div>
+            </div>
+          </div>
+          <div id="data">
+            <div id="data1"><i class="fa-solid fa-circle"></i> <span>Data Structures</span></div>
+            <div id="data2">
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Linked Lists</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Stacks</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Queues and Deques</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Trees and BST</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Tries</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Heaps</span></div>
+            </div>
+          </div>
+          <div id="data">
+            <div id="data1"><i class="fa-solid fa-circle"></i> <span>Advanced Problem Solving Techniques</span></div>
+            <div id="data2">
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Greedy</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Dynamic Programming</span></div>
+              <div id="time"><i class="fa-regular fa-circle"></i> <span> Graphs</span></div>
+            </div>
+          </div>
+          <div id="read">Read Next: Module 3 - LLD</div>
+        </div>
+        <button id="down">Download Curriculum</button>
+      </div>
+    </div>
+    <div id="talk">
+      <div id="talk1">
+        <div id="talk11">Talk to our Advisor</div>
+        <div id="talk12">AND GET</div>
+        <div id="talk13">
+          <div id="tal1"><i class="fa-solid fa-check-double"></i> Personalized <strong> Career Roadmap</strong></div>
+          <div id="tal1"><i class="fa-solid fa-check-double"></i> Free <strong> Career Counselling</strong></div>
+          <div id="tal1"><i class="fa-solid fa-check-double"></i> Free Access to <strong> Scalar Events</strong></div>
+        </div>
+        <button id="re12">Request a call</button>
+      </div>
+      <img
+        src="https://assets-v2.scaler.com/assets/scaler/svg/girl-advisor-d-8c3dfdfb2c1754477186102f21bd4658da55661f94f3b2f66b22bcafe084bbc0.png.gz"
+        alt="" id="talk2">
+    </div>
+    <div id="ious">Your learning is important. It’s a good idea to go through
+      reviews of <strong>previous students </strong>to make an informed decision</div>
+    <div id="ious1">1,000+ working professionals have joined the Scaler Academy family!</div>
+    <!-- <div id="walmart">
+      <div id="mart">
+        <div id="wal">
+          <div id="wal1">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"
+              alt="" id="wa1">
+            <div id="wa2">
+              <div id="may">Mayur Kharche</div>
+              <div id="may1">SDE3X</div>
+              <img id="may2"
+                src="data:image/png;base64,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"
+                alt="">
+            </div>
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz"
+              alt="" id="blue">
+          </div>
+          <div id="wal2">Scaler played a pivotal role in my journey, as the constant guidance I received and the
+            encouragement that was showered on me helped me learn better. The peer community is constructive, and the
+            mentorship arrangement makes it all a fantastic experience.</div>
+          <div id="wal3">Read More on scaler</div>
+        </div>
+      </div>
+    </div> -->
+    <div   id="reviews">
+      <div id="r0">Your learning is important. It's a good idea to go through
+       <b> reviews of previous students</b> to make an informed decision</div>
+        <div id="r1">1,000+ working professionals have joined the Scaler Academy family!</div>
+        <div id="cards">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Mayur-5dfb2aa6bbe5104c66761a9a8f777f8e3de89c23d09af6ded7047e98c2cac8d5.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Mayur Kharche</div>
+                <div id="m2">SDE3</div>
+                <div id="m3"><img src="./1.jpeg" height="50px" width="50px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color: blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Soumya-74407d22ad638ec30f6490504031de4089e28f667588594495b016126a55ed71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">
+              <div id="h1">
+              <div id="headers">
+              <div id="image"><img src="https://assets-v2.scaler.com/assets/academy/testimonial_images/Raghvendra-3599c9a25d5ed0de5a07dfa4cff2aa9d074cc0ae095a0421f6a4f1c939ad3f71.png.gz"></div>
+              <div id="m0">
+                <div id="m1">Soumya Darbari</div>
+                <div id="m2">SDE2</div>
+                <div id="m3"><img src="https://th.bing.com/th?id=OIP.HGbM5WQ710B2z-Prz0SnEgHaHD&w=256&h=244&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" height="40px" width="40px"></div>
+              </div>
+            </div>
+              <div id="pic"><img src="https://assets-v2.scaler.com/assets/academy/svg/scaler-logo-3186d07c6e09a5adf40102518812e5746d8476829f276493ebf9ca40350c6787.svg.gz" height="30px" width="30px"></div>
+            </div>
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title"></h5>
+              <p class="card-text" style="color: black;">Scaler exceeded my expectations in a way I had never even thought possible. I expected a single mentor from Scaler, but I ended up getting several people who guided me throughout..</p>
+            </div>
+            <div class="card-footer bg-transparent border-success" style="color:blue;">Read More on scaler ></div>
+          </div>
+        </div>
+    </div>
+   
+    <div id="teaching">
+      <div id="t0">Our <b> teaching army</b> will make you<b>confident about your fundamentals</b></div>
+      <div id="p">Our tutors have built scalable systems and realise the real-life importance of DSA and System Design, not just in interviews but throughout your career</div>
+      <div id="t1">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="cards">
+              <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/anshuman-85e4f5324d3c0bb62627a137362e7f7bdbc01564f70872f2a11124d780ff6f2f.png.gz" height="100%;" width="100%"></div>
+                <div class="card-body text-success">
+                  <h5 class="card-title" style="color: black;">Anshuman Singh</h5>
+                  <p class="card-text">EX <img src="./WhatsApp Image 2024-10-25 at 22.24.01_a6294a56.jpg" height="30px" width="100px" alt=""></p>
+                </div>
+                <div class="card-footer bg-transparent border-success" style="color: blue;">READ MORE ></div>
+              </div>
+              <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success" ><img src="https://assets-v2.scaler.com/assets/academy/png/mohit-215feea4e7e876cd6eb67c183c05a0c80c1131aa160c7272fad6ff34565f81cb.png.gz" height="100%;" width="100%"></div>
+                <div class="card-body text-success">
+                  <h5 class="card-title" style="color: black;">Mohith Yadav</h5>
+                  <p class="card-text">EX <img src="./WhatsApp Image 2024-10-25 at 22.24.10_fa892e30.jpg" height="30px" width="100px" alt=""></p>
+                </div>
+                <div class="card-footer bg-transparent border-success" style="color: blue;">READ MORE ></div>
+              </div>
+              <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success" "><img src="https://assets-v2.scaler.com/assets/academy/png/kshitij-1610f9adccde2749361d883081e123b52c81084930ab29645a0b9052bb91f687.png.gz" height="100%;" width="100%"></div>
+                <div class="card-body text-success">
+                  <h5 class="card-title" style="color: black;">Kshitij Mishra</h5>
+                  <p class="card-text">EX <img src="./WhatsApp Image 2024-10-25 at 22.24.20_d73efe63.jpg" height="30px" width="100px" alt=""></p>
+                </div>
+                <div class="card-footer bg-transparent border-success" style="color: blue;">READ MORE ></div>
+              </div>
+              <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/tarun-bb05b0be024562a1dffb59614d2fba22ea736a5b5551d5d3b2c84dc51570d003.png.gz" height="100%;" width="100%"></div>
+                <div class="card-body text-success">
+                  <h5 class="card-title" style="color: black;">Tarun Malhotra</h5>
+                  <p class="card-text">EX <img src="./WhatsApp Image 2024-10-25 at 22.24.29_c5074b34.jpg" height="30px" width="100px" alt=""></p>
+                </div>
+                <div class="card-footer bg-transparent border-success" style="color: blue;">READ MORE ></div>
+              </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div id="cards">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/anshuman-85e4f5324d3c0bb62627a137362e7f7bdbc01564f70872f2a11124d780ff6f2f.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Anshuman Singh</h5>
+                    <p class="card-text">EX <img src="./1.png" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/mohit-215feea4e7e876cd6eb67c183c05a0c80c1131aa160c7272fad6ff34565f81cb.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Mohith Yadav</h5>
+                    <p class="card-text">EX <img src="./2.png" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/kshitij-1610f9adccde2749361d883081e123b52c81084930ab29645a0b9052bb91f687.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Kshitij Mishra</h5>
+                    <p class="card-text">EX <img src="./3.png" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/tarun-bb05b0be024562a1dffb59614d2fba22ea736a5b5551d5d3b2c84dc51570d003.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Tarun Malhotra</h5>
+                    <p class="card-text">EX <img src="./4.jpeg" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="cards">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/anshuman-85e4f5324d3c0bb62627a137362e7f7bdbc01564f70872f2a11124d780ff6f2f.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Anshuman Singh</h5>
+                    <p class="card-text">EX <img src="https://www.algonquincollege.com/ac-social-media/files/2013/12/facebook_2015_logo_detail.png" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/mohit-215feea4e7e876cd6eb67c183c05a0c80c1131aa160c7272fad6ff34565f81cb.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Mohith Yadav</h5>
+                    <p class="card-text">EX <img src="./2.png" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/kshitij-1610f9adccde2749361d883081e123b52c81084930ab29645a0b9052bb91f687.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Kshitij Mishra</h5>
+                    <p class="card-text">EX <img src="./3.png" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success"><img src="https://assets-v2.scaler.com/assets/academy/png/tarun-bb05b0be024562a1dffb59614d2fba22ea736a5b5551d5d3b2c84dc51570d003.png.gz" height="100%;" width="100%"></div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Tarun Malhotra</h5>
+                    <p class="card-text">EX <img src="./4.jpeg" height="30px" width="100px" alt=""></p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">READ MORE ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="scaler">
+      <div id="s1"><img src="https://assets-v2.scaler.com/assets/scaler/png/Group 242-ad5ecbe718f9788691d11aa1b9bfaa5d5c889fbcbeb806f4e73de269007c05f3.png.gz"></div>
+      <div id="s2">
+        <div id="s3">Become a <span>Scaler Mentor</span></div>
+        <div id="s4">A chance to give back to the community. Mentor Scaler students and help them unlock their true potential.</div>
+      </div>
+      <div id="s5">
+        <button>KNOW MORE</button>
+      </div>
+    </div>
+   
+    
+   <div id="next">
+      <div id="n1">In education and in life, an <b>aspirational peer group</b> always takes <b>learning to</b></div>
+      <div id="n2"><b>the next level.</b> Your peers inspire you to be better</div>
+      <div id="p">Via <b>ScalerChat</b> you can interact with your peers across all classes and batches and even our
+        alumni. Collaborate on projects, share job referrals & interview experiences, compete with the best, make new
+        friends - the possibilities are endless and our community has something for everyone!</div>
+      <div id="n3">Here are some of the many useful channels on ScalerChat:</div>
+      <div id="n4">
+        <div id="n5">
+          <div id="n6">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/job-openings-selected-d46ebe4f4ea0c3722620fedfd3445327993625e622d9741248e6a014f1d612ec.svg.gz"
+              alt="">
+            <div id="n7">Informatin On Job Openings</div>
+          </div>
+          <div id="n6">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/project-collaborations-selected-a5130a9df783aa8e4939d301086cbf4f7f78bcd54a8fee77980ee4569e3afeef.svg.gz"
+              alt="">
+            <div id="n7">Project Collaboration</div>
+          </div>
+          <div id="n6">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/authentic-interview-experiences-b40069a6205981dc858042a3ef9fcb692979d95f27c805c13f628036113613d3.svg.gz"
+              height="50px" width="50px" alt="">
+            <div id="n7">Authentic Interview Experiences</div>
+          </div>
+          <div id="n6">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/competitive-coding-0fce677bcac2335ad8580ddc4075e83deda9c6f406f72061dda65319fd0908a2.svg.gz"
+              height="50px" width="50px" alt="">
+            <div id="n7">Competitive Coding</div>
+          </div>
+          <div id="n6">
+            <img
+              src="https://assets-v2.scaler.com/assets/academy/svg/announcement-e68649358703255b51556b042a3a6cad74b460e84cefb371dd564bc3a9fce48b.svg.gz"
+              height="50px" width="50px" alt="">
+            <div id="n7">Major Announcements</div>
+          </div>
+        </div>
+        <div id="n8">
+          <img
+            src="https://assets-v2.scaler.com/assets/academy/png/chat-1-2d10a2d51deab39986dc5b3fa1546214fd5fadc502e81c190cdff0ab7e8a9eb5.png.gz"
+            height="470px" width="700px" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div id="s1">Career services</div>
+      <div id="s2">Along with preparing you for the job, we also help you prepare for your search & your interviews</div>
+      <div id="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-v2.scaler.com/assets/academy/svg/employer-d308ffc80a2a4dcd539cdfc4da50dec20698c52fff259ff2dae4eea5dfb15e94.svg.gz" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dedicated recruiter team & 100+ employer partners help bring you diverse options</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-v2.scaler.com/assets/academy/svg/community-6fa9a0023c30456b10b76caa66f2de9daff9a4c74cc61bf19892cff4021c2a94.svg.gz" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Exchange job opportunities with our extensive Scaler student community</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-v2.scaler.com/assets/academy/svg/mock-3ef075c86047b3d501bbef3e91e533db4d3215e30107f5e6645ce11dc7a358eb.svg.gz" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Practice mock interviews with people working in the industry</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets-v2.scaler.com/assets/academy/svg/resume-b9775f453cdc3079a7031ec687839bbdab8b6cadf2c8f68ba0dfaf8e63045e2e.svg.gz" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Optimize your resume & LinkedIn profile with our experienced experts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="roadmap">
+      <div id="r1">Confused about which company to target next? <b>Try Our FREE Career Roadmap.</b></div>
+      <button>GET FREE CAREER ROADMAP</button>
+    </div>
+    <div id="learning">
+      <div id="l0"><b>Start your learning journey</b> or make some Maggi? In 2 minutes, you can do both!</div>
+      <div id="l1">
+        <div class="card text mb-3" style="max-width: 18rem;">
+          <div class="card-header" style="color: white; font-weight: bold;">1.</div>
+          <div class="card-body" >
+            <h5 class="card-title" style="color: white; width: 120px;">Easy Registration</h5>
+            <p class="card-text" style="color: white;">In <2 minutes, make a new account or login using social media / Interviewbit</p>
+          </div>
+        </div>
+        <div class="card text mb-3" style="max-width: 18rem;background-image: url(https://assets-v2.scaler.com/assets/academy/svg/carousel-2-9564cde8d38ebab1459025fdef2ce4ab5234c0eb513f8adcb2f1372239658666.svg.gz); ">
+          <div class="card-header" style="color: white; font-weight: bold;">2.</div>
+          <div class="card-body" >
+            <h5 class="card-title" style="color: white; width: 120px;">Quick Evaluation</h5>
+            <p class="card-text" style="color: white;">Simple 30 minutes MCQ test, focused on aptitude and basic coding to find the right course for you</p>
+          </div>
+        </div>
+        <div class="card text mb-3" style="max-width: 18rem;background-image: url(https://assets-v2.scaler.com/assets/academy/svg/carousel-3-2e0b3720f1392a3e14891c535812590f2fbbd783345b01fafd9b31e490478a81.svg.gz);">
+          <div class="card-header" style="color: white; font-weight: bold;">3.</div>
+          <div class="card-body" >
+            <h5 class="card-title" style="color: white; width: 120px;">Enroll in your course</h5>
+            <p class="card-text" style="color: white;">Sign up with our various EMI options to swiftly kickstart your learning journey</p>
+          </div>
+        </div>
+        <div class="card text mb-3" style="max-width: 18rem; background-image: url(https://assets-v2.scaler.com/assets/academy/svg/carousel-4-00d16bc0a8527953681077555f504bd54ca8cc03896d1272ad62ffc77d116eb8.svg.gz);">
+          <div class="card-header" style="color: white; font-weight: bold;">4.</div>
+          <div class="card-body" >
+            <h5 class="card-title" style="color: white; width: 120px;">Upgrade your batch!</h5>
+            <p class="card-text" style="color: white;">Want a shorter course? Take the coding challenge after enrollment
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="question">
+      <div id="q1">Frequently Asked Questions</div>
+      <div id="q2">
+        <div id="q3">
+          <div id="q4">Program</div>
+          <div id="q4">Curriculam</div>
+          <div id="q4">Teaching</div>
+          <div id="q4">Teaching Assistants</div>
+          <div id="q4">Entrance Test</div>
+          <div id="q4">Mentors</div>
+          <div id="q4">Placment Support</div>
+          <div id="q4">Tution Fee</div>
+        </div>
+        <div id="q5">
+          <div id="q6">Curriculum</div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
+                  What are the Beginner, Intermediate and Advanced sections?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div id="p">Each Scaler Academy batch (a new batch is launched every month) has three sections - Beginner, Intermediate and Advanced section. All the three sections start at the same time. Applicants are sorted into the three sections based on a written entrance test. The course content does change between the three sections and the course duration is different as well. The curriculum and duration is given below. For more information, please visit www.scaler.com/academy and download our curriculum brochure.
+                    1.Advanced section -
+The duration of this section is 31 weeks.
+Students in this section would be taught: Problem Solving and CS Fundamentals (15 weeks) and System Design with project (15 weeks). Students can choose a specialisation between fullstack and backend engineering during the System Design module in the last 15 weeks
+2.Intermediate section -
+The duration of this section is 39 weeks.
+In addition to all the content that the ‘Advanced section’ students would be taught, students of this section would be taught an additional module of Programming Constructs (8 weeks)
+3.Beginner section -
+The duration of this section is 47 weeks
+In addition to all the content that the ‘Advanced section’ students would be taught, students of this section would be taught an additional module of Introduction to Programming (8 weeks)
+Please note that the upcoming November batch would not accept applicants for the Beginner section. It would only accept applicants for the Intermediate and Advanced sections.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo">
+                  Do all sections start at the same time?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                 <div id="p">Yes, all sections start at the same time but end at different times, depending on the duration of the course for that section. The Advanced section ends in 31 weeks, the Intermediate section ends in 39 weeks and the Beginner section ends in 47 weeks.
+                  Please note that the upcoming November batch would not accept applicants for the Beginner section. It would only accept applicants for the Intermediate and Advanced sections.</div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
+                  Should I join the Beginner, Intermediate or Advanced section?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                 <div id="p">Your eligibility for the Beginner, Intermediate or Advanced section is decided basis an entrance test.
+                 </div>                 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
+                  What is the duration of this program?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div id="p">Depending on which section you are allotted, the duration of the course could range from 31 weeks to 47 weeks. This translates to 7 months to 11 months.</div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="part1">
+      <div id="one">
+        <div id="main">
+        <img src="https://assets-v2.scaler.com/assets/scaler/svg/scaler-logo-white-22af1fc1c42561ab06c87229e1e8abb555716fe2a1d817482067cb8f005e1799.svg.gz" alt="" id="photo">
+        <div id="line">Engineered by</div>
+        <img src="https://assets-v2.scaler.com/assets/scaler/png/made-by-interviewbit-footer-cf88e6220897577618a5dff23eef6f55d95d787a22c0f88b4ffa54d6c3dbf5d6.png.gz" alt="" id="photo2">
+        </div>
+        <div id="sub">
+        <div id="block">
+          <div id="first">
+            <div id="text">Download the App</div>
+            <img src="https://assets-v2.scaler.com/assets/scaler/svg/google-play-store-342b4c76febbbd5db4a5e0072d721a2c4ae132a0e9d359d0e39d252a5a4a48de.svg.gz" alt="" id="photo3">
+
+          </div>
+          <div id="second">
+            <img src="https://assets-v2.scaler.com/assets/scaler/svg/qr_code-6a66adcb8b6ae184ff4eb7dc2b1e26461494bfca27cb596f4946c8b6d0a6667f.svg.gz" alt="" id="qr">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div id="two">
+        <div id="heading">Resources</div>
+        <div id="matter">
+          <div id="text">About us</div>
+          <div id="text">Become a Mentor</div>
+          <div id="text">Become a TA</div>
+          <div id="text">Become a Career Coach</div>
+          <div id="text">Scaler Blog</div>
+          <div id="text">Frequently Asked Questions</div>
+          <div id="text">Join Our Discord</div>
+          <div id="text">Terms of Use</div>
+          <div id="text">Privacy Policy</div>
+
+        </div>
+      </div>
+      <div id="three">
+        <div id="heading">Contact us</div>
+        <div id="matter">
+          <div id="text">Email: hello@scaler.com</div>
+        </div>
+      </div>
+      <div id="four">
+        <div id="heading">Follow us on</div>
+        <div id="matter">
+        <div id="line">
+          <i class="fa-brands fa-youtube"></i>
+          <div id="text">Youtube</div>
+        </div>
+        <div id="line">
+          <i class="fa-brands fa-linkedin"></i>
+          <div id="text">LinkedIn</div>
+        </div>
+        <div id="line">
+          <i class="fa-brands fa-square-facebook"></i>
+          <div id="text">Facebook</div>
+        </div>
+        <div id="line">
+          <i class="fa-brands fa-twitter"></i>
+          <div id="text">Twitter</div>
+          </div>
+        <div id="line">
+          <i class="fa-brands fa-instagram"></i>
+            <div id="text">Instagram</div>
+            </div>
+        <div id="line">
+          <i class="fa-brands fa-quora"></i>
+            <div id="text">Reviews on Quora</div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="part2">_____________________</div>
+    <div id="part3">
+      <div id="heading">Tutorials</div>
+      <div id="lines">Data Structures Tutorial | Python Tutorial | Java Tutorial | DBMS Tutorial | C Tutorial | JavaScript Tutorial | C++ Tutorial | SQL Tutorial | <br>Data Science Tutorial | Software Engineering Tutorial | HTML Tutorial | CSS Tutorial</br></div>
+    </div>
+    
+    
+    
+  </div>
+  
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
